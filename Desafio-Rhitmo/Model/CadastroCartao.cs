@@ -62,7 +62,7 @@ namespace Desafio_Rhitmo.Model
         [Column("numero_cartao")]
         [Required]
         [StringLength(30)]
-        public long NumeroCartao { get; set; }
+        public string NumeroCartao { get; set; }
 
         [Column("codigo_seguranca")]
         [Required]
