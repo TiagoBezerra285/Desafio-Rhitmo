@@ -22,6 +22,7 @@ namespace Desafio_Rhitmo.Controllers
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CadastroCartaoDto>>> FindAll()
+        
         {
             var cadastros = await _repository.FindAll();
             return Ok(cadastros);

@@ -20,5 +20,6 @@ namespace Desafio_Rhitmo.Dto
         public string NumeroCartao { get; set; }
         public string CodigoSeguranca { get; set; }
         public string DataExpiracao { get; set; }
+        //public DateTime DataCriacao { get; set; }
     }
 }

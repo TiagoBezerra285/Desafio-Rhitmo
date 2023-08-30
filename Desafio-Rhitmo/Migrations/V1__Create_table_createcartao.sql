@@ -1,5 +1,5 @@
 
-CREATE TABLE IF NOT EXISTS `cadastroCartao` (
+CREATE TABLE IF NOT EXISTS `cadastrocartao` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(80) NOT NULL,
   `email` varchar(80) NOT NULL,
@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS `cadastroCartao` (
   `endereco` varchar(100) NOT NULL,
   `cep` varchar(20) NOT NULL,
   `estado` varchar(20) NOT NULL,
-  `codade` varchar(20) NOT NULL,
-  `tipo_cartao` varchar(20) NOT NULL,
+  `cidade` varchar(20) NOT NULL,
+  `tipo_cartao` bigint(20) NOT NULL,
   `nome_cartao` varchar(20) NOT NULL,
   `numero_cartao` varchar(20) NOT NULL,
   `codigo_seguranca` varchar(100) NOT NULL,

@@ -26,6 +26,9 @@ namespace Desafio_Rhitmo.Repository
         public async Task<CadastroCartaoDto> Create(CadastroCartaoDto cadastrocartaoDto)
         {
             CadastroCartao cadastrocartaos = _mapper.Map<CadastroCartao>(cadastrocartaoDto);
+
+            cadastrocartaos.DataCriacao = DateTime.Now;
+
             _context.CadastroCartaos.Add(cadastrocartaos);
             await _context.SaveChangesAsync();
             return _mapper.Map<CadastroCartaoDto>(cadastrocartaos);

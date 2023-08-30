@@ -6,13 +6,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Desafio_Rhitmo.Model
 {
-    [Table("cadastro_cartao")]
+    [Table("cadastrocartao")]
     public class CadastroCartao 
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
         [Column("name")]
         [Required]
         [StringLength(80)]
@@ -73,6 +73,9 @@ namespace Desafio_Rhitmo.Model
         [Required]
         [StringLength(50)]
         public string DataExpiracao { get; set; }
+
+        [Column("data_criacao")]
+        public DateTime DataCriacao { get; set; }
 
     }
 }
